@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="Author" content="Argie Delgado">
+        <meta name="Description" content="Portfolio">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> | Portfolio</title>
+
+        <!-- Css -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <button class="menu-button" id="open-menu">&#9776;</button>
+                    <button class="menu-button-x" id="close-menu">&#x2612;</button>
+                    <ul id="nav-ul">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#webdev">Web & App</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>  
+        </header>
+
+        <div id="home">
+            <h1>"Coding is my Life"</h1>
+        </div>
+        
+        <main id="about">
+            <img src="assets/img/profile.jpg" width="320px" height="350px" alt="Profile Image">
+            <h1><span>W</span>eb & <span>A</span>pp Developer</h1>
+            <p>Hello, I'm Argie Delgado, and I'm passionate about coding. With a keen interest in technology and software development, I have immersed myself in the world of coding, where lines of code transform into innovative solutions and digital creations. My journey in coding has not only been a hobby but a constant source of inspiration, enabling me to explore and create in the ever-evolving landscape of programming. Whether it's building web applications, tinkering with algorithms, or diving into exciting new projects, I find joy and fulfillment in the art of coding. Join me as I navigate this digital realm and continue to expand my horizons in the world of technology.</p>
+        </main>
+
+        <section id="webdev">
+            <h1>Web Development</h1>
+            <hr>
+            <div class="customRow">
+                <div class="customCol">
+                    <img src="assets/img/logo1.png" alt="HTML" width="343px" height="250px">
+                    <h2 class="logo1">HTML</h2>
+                </div>
+                <div class="customCol">
+                    <img src="assets/img/logo2.png" alt="CSS" width="342px" height="250px">
+                    <h2 class="logo2">CSS</h2>
+                </div>
+                <div class="customCol">
+                    <img src="assets/img/logo3.png" alt="JavaScript" width="343px" height="250px">
+                    <h2 class="logo3">JavaScript</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="appdev">
+            <h1>App Development</h1>
+            <hr>
+            <div class="customRow">
+                <div class="customCol">
+                    <img src="assets/img/java.png" alt="HTML" width="343px" height="250px">
+                    <h2 class="logo1">Java</h2>
+                </div>
+                <div class="customCol">
+                    <img src="assets/img/csharp.png" alt="CSS" width="342px" height="250px">
+                    <h2 class="logo2">C Sharp</h2>
+                </div>
+                <div class="customCol">
+                    <img src="assets/img/sql.png" alt="JavaScript" width="343px" height="250px">
+                    <h2 class="logo3">SQL</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div id="form">
+                <form>
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name"> <br>
+                    <label for="suggestion">Suggestion:</label> <br>
+                    <textarea id="suggestion" name="suggestion" rows="4"></textarea> <br>
+                    <input type="button" value="Submit" id="submit">
+                </form>
+            </div>
+        </section>
+    
+        <footer id="footer">
+            <p>&copy; Copyright reserved by Koni 2023</p>
+        </footer>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
