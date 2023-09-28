@@ -109,24 +109,23 @@ img {
     line-height: 1.4;
     text-align: left;
 }
+/* ---------------------------- Webdevs -----------------------------------*/
 
-
-/* ---------------------------- Web Dev -----------------------------------*/
-
-#webdev, #appdev {
-    padding-top: 100px;
-    text-align: center;
+#webdevs {
+    border-radius: 50px;
+    margin: 150px;
+    min-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-h1{
+#webdevs h1 {
+    padding-top: 75px;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 50px;
-    margin-top: 25px;
 }
-
 
 .customRow {
-    gap: 50px;
+    gap: 1px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -135,8 +134,8 @@ h1{
 }
 
 .customCol {
-    margin: 10px;
-    max-width: 200px;
+    margin: 50px;
+    max-width: 150px;
     min-width: 150px;
 }
 
@@ -186,8 +185,7 @@ label {
     color: #555;
 }
 
-input[type="text"],
-textarea {
+input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -235,7 +233,7 @@ footer p {
 
 /* ----------------------------  Navbar for deskopt --------------------------*/
 
-@media (max-width: 700zpx) {
+@media (max-width: 700px) {
     .menu-button, .menu-button-x {
         visibility: visible;
     }
@@ -289,7 +287,7 @@ footer p {
         max-width: 100%;
     }
 
-    /* ---------------------------- Responsive Webdev --------------------------*/
+    /* ---------------------------- Responsive Webdevs --------------------------*/
     .customRow {
         flex-wrap: wrap;
         justify-content: center;
@@ -297,6 +295,6 @@ footer p {
     
     .customCol {
         max-width: 200px;
-        margin: 10px;
+        margin: 9px;
     }
 }
