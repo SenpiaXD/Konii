@@ -1,4 +1,4 @@
-
+    
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +89,7 @@ img {
     width: 100%;
     max-width: 320px;
     height: auto;
-    margin: 0 10px 20px;
+    margin: 0 15px 20px;
     border-radius: 20px;
     display: block;
 }
@@ -243,7 +243,7 @@ footer p {
 
 /* ---------------------------- Responsive for Mobile Devices --------------------------*/
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 
     /* ---------------------------- Responsive Navbar --------------------------*/
     .menu-button {
@@ -296,7 +296,7 @@ footer p {
     }
     
     .customCol {
-        max-width: 100%;
+        max-width: 200px;
         margin: 10px;
     }
 }
