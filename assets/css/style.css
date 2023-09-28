@@ -228,12 +228,11 @@ footer {
     font-size: 16px;
     padding-top: 20px;
     margin-top: 10px;
+    text-align: center;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
     height: 50px;
-    background-color: white;
     color: black;
 }
 
@@ -296,4 +295,33 @@ footer p {
     #about img {
         max-width: 100%;
     }
+}
+
+/* ---------------------------- Responsive Arrorw-up --------------------------*/
+
+.back-to-Top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+    background-color: #0f172a;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.back-to-Top.shown {
+    display: block;
+    visibility: visible;
+    transform: none;
+}
+
+.back-to-Top img {
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }

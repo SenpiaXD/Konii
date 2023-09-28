@@ -23,3 +23,20 @@ const sumbitButton = document.getElementById("submit");
 sumbitButton.addEventListener("click", () => {
     Swal.fire('Success!', 'Your feedback sent to author', 'succss');
 });
+
+// BACKTOTOP
+function backToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+
+window.addEventListener('scroll', function() {
+  const backButton = document.querySelector('.back-to-Top');
+  if (window.scrollY > 0) {
+      backButton.style.display = 'block';
+  } else {
+      backButton.style.display = 'none';
+  }
+});
