@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="Author" content="Argie P. Delgado">
+        <meta name="Keywords" content="HTML, CSS, JS">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Css for Mobile -->
+        <link rel="stylesheet" href="./assets/css/mobile-style.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./assets/css/bootsrap.css" >
+        <title>| My Portfolio</title>
+    </head>
+    <body>
+        <header id="overlay">
+            <nav>
+                <button class="menu-button" id="toggle-menu">&#9776;</button>
+                <ul id="nav-ul">
+                    <li><a href="#home" id="mainHome">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <!-- Home Page -->
+            <section class="fade-in show-once" id="home">
+            <a href="#home" title="home-link"></a>
+                <h1 id="typer"></h1>
+                <h5 id="typer2"></h5>
+                <p style="font-size: 15px; line-height: 25px;">
+                    I'm a passionate web and app developer, actively engaged in honing my skills and knowledge in the dynamic world of technology. <br> While I may not be a seasoned professional just yet, I am wholeheartedly dedicated to my journey of growth and development in the field. <br> My days are filled with coding, experimenting, and continuously expanding my understanding of web and app development. <br> Through each project and every line of code, I am building a foundation for a promising future in this exciting realm of digital innovation.
+                </p>     
+                <a href="./assets/html/main.html" target="_blank">
+                    <button id="click-btn">Download CV</button>
+                </a>
+            </section>
+            <!-- About -->
+            <section class="fade-in show-once" id="about">
+                <a href="#about" title="about-link"></a>
+                    <h1>About</h1>
+                    <div class="info">
+                        <img src="./assets/img/profile.jpg" width="320px" height="350px" alt="Profile Image">
+                        <div>
+                            <h5>Hi I am Argie P. Delgado Im 17 years old I am a senior highschol student in STI Marikina Im currently learning web development</h5>
+                            <div class="about-info">
+                                <div class="info-holde">
+                                    <p>Name</p>
+                                    <p>Contact No</p>
+                                    <p>Gmail</p>
+                                </div>
+                                <div class="info-colon">
+                                    <p>:</p>
+                                    <p>:</p>
+                                    <p>:</p>
+                                </div>
+                                <div class="info-value">
+                                    <p>Argie P. Delgado</p>
+                                    <p>09692180054</p>
+                                    <p>delgadoargie04@gmail.com</p>
+                                </div>
+                            </div>
+                            <h3>My Skill</h3>
+                            <div class="info-container">
+                                <div class="info-card-container">
+                                    <div class="info-card">
+                                        <img src="./assets/img/logo1.png" alt="HTML">
+                                    </div>
+                                    <div class="info-card">
+                                        <img src="./assets/img/logo2.png" alt="CSS">
+                                    </div>
+                                    <div class="info-card">
+                                        <img src="./assets/img/logo3.png" alt="JS">
+                                    </div>
+                                    <div class="info-card">
+                                        <img src="./assets/img/java.png" alt="JAVA">
+                                    </div>
+                                    <div class="info-card">
+                                        <img src="./assets/img/csharp.png" alt="CSHARP">
+                                    </div>
+                                    <div class="info-card">
+                                        <img src="./assets/img/sql.png" alt="SQL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>         
+            <!-- Service -->
+            <section class="fade-in show-once" id="service">
+            <a href="#service" title="service-link"></a>
+                <h1>Services</h1>
+                <div class="service-container">
+                    <div class="service-card-container">
+                        <div class="service-card">
+                            <h4>Front-end Coding</h4>
+                            <img src="assets/img/gif/Frontend.gif" alt="front-end logo" loading="lazy" />
+                            <p>
+                                I am a skilled and efficient front-end developer with expertise in HTML, CSS, and JavaScript. My experience also encompasses various front-end frameworks, libraries, and tools, enabling me to deliver top-notch web solutions.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <h4>Performance Optimization</h4>
+                            <img src="assets/img/gif/Optimization.gif" alt="Optimization">
+                            <p>
+                                I have a profound understanding and expertise in optimizing front-end code and assets to improve website loading times and deliver an exceptional user experience.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <h4>Responsive Web Design</h4>
+                            <img src="assets/img/gif/Responsiveness.gif" alt="responsive logo" loading="lazy"/>
+                            <p>
+                                As a web developer, I excel in crafting responsive web applications that seamlessly adapt to diverse screen sizes and devices, guaranteeing a uniform and user-friendly experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section class="fade-in show-once" id="contact">
+                <a href="#contact" title="contact-link"></a>
+                <h1>Contact</h1>
+                <div id="form">
+                    <form id ="contact-form">
+                        <label>Name:</label> <br>
+                        <input type="text" id="fullName" required> <br>
+
+                        <label>Email:</label> <br>
+                        <input type="text" id="email_id" required> <br>
+
+                        <label>Comment:</label> <br>
+                        <textarea id="message" rows="4" required></textarea> <br>
+
+                        <input onclick="SendMail()" type="button" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div onclick="backToTop()">
+            <a aria-label="Back to Top" class="back-to-Top" id="top">
+                <img src="./assets/img/arrow.svg" alt="Arrow Up" />
+            </a>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; Copyright reserved by Koni</p>
+        </footer>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <!-- Import Scroller Revealer Library-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="text/javascript" src="./assets/js/scrollreveal.js"></script>
+        <!-- Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Email JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="./assets/js/sendEmail.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("zxpAY7tfdYatNo1xO");
+            })();
+        </script>
+    </body>
+</html>
