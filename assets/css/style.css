@@ -172,7 +172,8 @@ li a:hover {
 .service-card-container {
     padding-bottom: 25px;
     display: grid;
-    grid-template-columns: repeat(3 , auto); 
+    grid-template-columns: repeat(3 , auto);
+    justify-content: center;
 }
 
 .service-card {
