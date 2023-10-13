@@ -95,14 +95,9 @@ li a:hover {
 
 /* ----------------------------------About Us----------------------------------------- */
 
-#about {
-    max-width: 1200px;
-    padding: 1em;
-    margin: auto;
-}
-
 #about h1 {
-    color: black;   
+    color: black;
+    margin-top: 150px;
     letter-spacing: 5px;
     font-size: 3em;
     text-align: center;
