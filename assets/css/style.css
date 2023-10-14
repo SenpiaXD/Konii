@@ -262,7 +262,7 @@ body, h1, p, input, textarea, form {
 }
 
 #form {
-    max-width: 600px;
+    max-width: 750px;
     margin: 45px auto;
     padding: 20px   ;
     border: 1px solid #ccc;
