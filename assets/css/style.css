@@ -84,6 +84,8 @@ li a:hover {
     border-radius: 10px; 
     cursor: pointer;
     background-color: red;
+    color: white;
+    font-weight: 600;
 }
 
 #click-btn:hover {
