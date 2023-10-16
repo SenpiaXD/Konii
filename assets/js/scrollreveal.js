@@ -30,6 +30,6 @@ ScrollReveal().reveal(".flip", {
 ScrollReveal().reveal(".slide-left", {
     duration: 3000,
     origin: "right",
-    distance: "300px",
+    distance: "50px",
     easing: "ease-in-out"
 });
