@@ -18,6 +18,58 @@ listView.addEventListener("click", () => {
     listView.classList.toggle("show");
 });
 
+// Functionality for Every View: Modal View 
+
+const blurElement = document.getElementById("overlay");
+
+var modal = document.getElementById("modal");
+
+var modalTitle = modal.querySelector(".modal-title");
+var modalId = modal.querySelector(".modal-id");
+var modalStrand = modal.querySelector(".modal-strand");
+var modalRole = modal.querySelector(".modal-role");
+var modalImage = modal.querySelector(".modal-image");
+
+function modalShow(cardIndex) {
+
+    // Enable blur effect
+    blurElement.style.backgroundColor = "(0, 0, 0, 0.5);"
+    blurElement.style.backdropFilter = "blur(5px)";
+    blurElement.style.height = "1000%";
+    blurElement.style.width = "100%";
+
+    modal.style.display = "block";
+
+    const jsonDataArray = "./assets/json/aboutStudent.json";
+    fetch(jsonDataArray)
+        .then(response => response.json())
+        .then(jsonDataArray => {
+            var selectedData = jsonDataArray[cardIndex]
+            modalTitle.innerHTML = selectedData.name;
+            modalStrand.innerHTML = selectedData.strand;
+            modalId.innerHTML = "<b><i>ID: </i></b>" + selectedData.id;
+            modalRole.innerHTML = "<b>Worked on: </b>" + selectedData.role;
+            modalImage.src = selectedData.imageUrl;
+        });
+}
+
+document.addEventListener("click", function () {
+    var closeButton = document.querySelector(".modal .btn-close");
+    if (closeButton) {
+        closeButton.addEventListener("click", closeModal);
+    }
+});
+
+function closeModal() {
+    modal.style.display = "none";
+
+    // Disable blur effect
+    blurElement.style.backgroundColor = ""
+    blurElement.style.backdropFilter = "";
+    blurElement.style.height = "";
+    blurElement.style.width = "";
+}
+
 // BACKTOTOP
 function backToTop() {
     window.scrollTo({
@@ -35,32 +87,21 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// TypeWritter
-var i = 0;
-var txt1 = "Hi, I am Argie P. Delgado";
-const speed = 75;
+// Hide navbar 
 
-function Write() {
-    if(i < txt1.length) {
-        document.getElementById("typer").innerHTML += txt1.charAt(i);
-        i++;
-        setTimeout(Write, speed);
+let prevScrollPos = window.scrollY;
+    
+const navbar = document.getElementById("overlay");
+
+window.onscroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    // Check if scrolling down and not in mobile view (viewport width >= 950px)
+    if (currentScrollPos > prevScrollPos && window.innerWidth >= 950) {
+        navbar.style.top = "-75px";
+    } else {
+        navbar.style.top = "0";
     }
-}
 
-var e = 0;
-var txt2 = "I'm a web developer and app developer.";
-const speed2 = 75;
-
-function Write2() {
-    if(e < txt2.length) {
-        document.getElementById("typer2").innerHTML += txt2.charAt(e);
-        e++;
-        setTimeout(Write2, speed2);
-    }
-}
-
-window.onload = function () {
-    Write();
-    Write2();
-}
+    prevScrollPos = currentScrollPos;
+};
