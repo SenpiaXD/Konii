@@ -107,14 +107,11 @@ li a:hover {
 }
 
 #about .info {
+    padding: auto;
     display: flex;
     max-width: 1000px;
     margin: auto;
     gap: 25px;
-}
-
-.info {
-    padding-left: 100px;
 }
 
 #about .about-info {

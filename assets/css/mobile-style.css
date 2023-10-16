@@ -147,8 +147,14 @@
         min-height: 100%;
     }
 
+
     #click-btn {
         margin-bottom: 25px;
+    }
+
+
+    #about {
+        padding: 25px;
     }
     
 
