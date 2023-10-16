@@ -28,8 +28,8 @@ ScrollReveal().reveal(".flip", {
 });
 
 ScrollReveal().reveal(".slide-left", {
-    duration: 3000,
+    duration: 2000,
     origin: "right",
-    distance: "50px",
+    distance: "25px",
     easing: "ease-in-out"
 });
