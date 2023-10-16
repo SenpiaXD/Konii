@@ -108,10 +108,13 @@ li a:hover {
 
 #about .info {
     display: flex;
-    padding-top: 10px;
     max-width: 1000px;
     margin: auto;
     gap: 25px;
+}
+
+.info {
+    padding: 100px;
 }
 
 #about .about-info {
