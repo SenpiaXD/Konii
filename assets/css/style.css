@@ -70,6 +70,10 @@ li a:hover {
 
 #home h5, p{
     padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 700px;
+    letter-spacing: 1px;
 }
 
 #home span {
@@ -136,6 +140,7 @@ li a:hover {
 }
 
 .info-card img {
+    object-fit: contain;
     max-width: 25px;
     max-height: 25px;
     border-radius: 10px;
@@ -298,6 +303,7 @@ swiper-container {
     max-width: 250px;
     min-height: 350px;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .service-card:hover {
@@ -341,6 +347,7 @@ swiper-container {
 }
 
 .project-card img {
+    object-fit: contain;
     max-width: 1000px;
     min-height: 250px;
     border-radius: 10px;
