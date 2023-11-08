@@ -72,11 +72,11 @@ li a:hover {
 
 .container-home {
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 
 #home {
-    padding: 200px 0 0 100px;
+    padding: 200px 0 0 75px;
     color: black;
     min-height: 100vh;
 }
