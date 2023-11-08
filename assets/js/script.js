@@ -44,3 +44,13 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    if(window.innerWidth <= 950) {
+        const navList = document.getElementById("nav-ul");
+
+        navList.addEventListener("click", () => {
+            document.getElementById("mySidenav").style.width = "0";
+        });
+    }
+});
