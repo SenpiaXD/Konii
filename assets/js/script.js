@@ -1,13 +1,3 @@
-// Hide the navbar at first and once the button clicked it will show up the nav
-document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("toggle-menu");
-    const nav = document.getElementById("mySidenav");
-    
-    btn.addEventListener("click", () => {
-        nav.style.display = "block";
-    })
-});
-
 // BACKTOTOP
 function backToTop() {
     window.scrollTo({
