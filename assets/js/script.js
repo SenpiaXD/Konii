@@ -1,3 +1,12 @@
+// Hide the navbar at first and once the button clicked it will show up the nav
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("toggle-menu");
+    const nav = document.getElementById("mySidenav");
+    
+    btn.addEventListener("click", () => {
+        nav.style.display = "block";
+    })
+});
 
 // BACKTOTOP
 function backToTop() {
@@ -18,12 +27,11 @@ window.addEventListener('scroll', function() {
 
 // Side bar
 function openNav() {
-    return document.getElementById("mySidenav").style.width = "100%";
-
+    document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
-    return  document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
