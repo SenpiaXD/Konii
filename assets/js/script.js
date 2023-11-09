@@ -1,22 +1,3 @@
-// Mobile Functionality: Responsive Navbar
-
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleMenuButton = document.getElementById("toggle-menu");
-    const navUl = document.getElementById("nav-ul");
-
-    toggleMenuButton.addEventListener("click", function () {
-        
-        navUl.classList.toggle("show");
-        toggleMenuButton.classList.toggle("active");
-    });
-});
-
-// Mobile Functionality: Responsive Navbar
-const listView = document.getElementById("nav-ul");
-
-listView.addEventListener("click", () => {
-    listView.classList.toggle("show");
-});
 
 // BACKTOTOP
 function backToTop() {
