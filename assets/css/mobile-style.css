@@ -207,25 +207,25 @@
 /*------------------------------Desktop mode for Mobile Phone-----------------------------------*/
 /* Media query for viewport width 1075px or below */
 @media (max-width: 1250px) {
-    .aboutUs-sub-card-container {
-        grid-template-columns: repeat(3 , auto);    
-    }
+
+    /* ------------------------------------ Home ------------------------------------------- */
 
     #home {
         min-height: 100%;
         margin: 0 25px 0 25px;
     }
 
-
     #click-btn {
         margin-bottom: 25px;
     }
 
+    /* ------------------------------------ About ------------------------------------------- */
 
     #about {
         padding: 10px 50px 20px;
     }
     
+    /* ------------------------------------ Project ------------------------------------------- */
 
     .project-card img {
         max-width: 500px;
