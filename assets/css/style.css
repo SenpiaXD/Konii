@@ -518,8 +518,8 @@ footer p {
 /* ---------------------------- Responsive Arrorw-up --------------------------*/
 
 .back-to-Top {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -540,13 +540,13 @@ footer p {
 }
 
 .back-to-Top img {
-    width: 15px;
-    height: 15px;
+    color: black;
+    width: 25px;
+    height: 25px;
     vertical-align: middle;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
 }
 
 @keyframes pulse {
