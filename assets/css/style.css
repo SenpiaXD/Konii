@@ -530,6 +530,7 @@ footer p {
     z-index: 99;
     text-align: center;
     line-height: 45px;
+    animation: pulse 2s infinite;
 }
 
 .back-to-Top.shown {
@@ -546,4 +547,21 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	}
 }
