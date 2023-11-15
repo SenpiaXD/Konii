@@ -56,3 +56,23 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
+
+// Checking if the user changing the width by inspecting: Mobile to deskopt mode
+let isMobile = window.innerWidth <= 950;
+let hasReloaded = false;
+
+window.addEventListener('resize', reloadPageOnResize);
+
+function reloadPageOnResize() {
+    const newIsMobile = window.innerWidth <= 950;
+
+    if (isMobile !== newIsMobile && !hasReloaded) {
+        location.reload();
+        hasReloaded = true;
+    } else if (isMobile !== newIsMobile) {
+        hasReloaded = false;
+    }
+    isMobile = newIsMobile;
+}
+
+reloadPageOnResize();
